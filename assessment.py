@@ -99,7 +99,7 @@ def your_information(town, first, last):
         print "Hi, %d where are you from?: " % (name)
 
 your_information("San Francisco", "Amee", "Covarrubias")
-    
+
 
 
 
@@ -128,7 +128,7 @@ def is_berry(fruit):
         return False
 
 is_berry("cherry")
-    
+
 
 # (b) Write another function, shipping_cost(), which calculates shipping cost
 #     by taking a fruit name as a string and calling the is_berry() function
@@ -138,14 +138,14 @@ is_berry("cherry")
 def shipping_cost(fruit):
     """Calculates shipping cost of fruit"""
 
-    if is_berry() == True:
+    if is_berry("cherry") == True:
         return 0
 
     else:
         return 5
 
 shipping_cost("cherry")
-   
+
 
 
 # 2. Make a function that takes in a number and a list of numbers. It should
@@ -184,12 +184,12 @@ def append_to_list(lst, num):
 
 def calculate_price(a, b, c):
     item_price = raw_input("How much does your item cost?: ")
-    state = raw_input("What state was the item purchased?: (Use two letter abbreviation.").upper()
+    state = raw_input("What state was the item purchased?: (Use two letter abbreviation.)").upper()
     tax = raw_input("What is the tax percentage of the item? If you're unsure, type: unknown")
 
     if tax == "unknown":
         tax = 0.5
-    
+
     if  state == "CA":
         total = item_price * tax * 0.3
         return total
@@ -205,8 +205,8 @@ def calculate_price(a, b, c):
 
         elif item_price > 100:
             total = (item_price * tax) + 3
-            return total 
-calculate_price()
+        return total 
+calculate_price(4.75, "CA", "unknown")
 
 
 ###############################################################################
